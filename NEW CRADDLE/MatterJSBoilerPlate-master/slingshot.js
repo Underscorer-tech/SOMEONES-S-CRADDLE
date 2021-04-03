@@ -20,9 +20,21 @@ World.add(world,this.slingshot)
 
 }
 display(){
+var pointA=this.slingshot.bodyA.position;
+var pointB=this.slingshot.bodyB.position;
 
+fill("black")  
 
-    
+strokeWeight(20);
+
+var Anchor1X=pointA.x
+var Anchor1Y=pointA.y
+
+var Anchor2X=pointB.x+this.offsetX;
+var Anchor2Y=pointB.y+this.offsetY;
+
+line(Anchor1X,Anchor1Y,Anchor2X,Anchor2Y)
+
 }
 
 }
